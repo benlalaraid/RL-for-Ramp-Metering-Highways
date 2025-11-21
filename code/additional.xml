@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<additional>
+    <!-- Traffic Light at merge_point -->
+    <tlLogic id="merge_point" type="static" programID="1" offset="0">
+        <!-- Green for both ramp and highway (GGGG) when the ramp lane is empty -->
+        <phase duration="30" state="GGGG" />
+        <!-- Yellow for ramp, Green for highway (yGGG) when ramp has vehicles -->
+        <phase duration="5" state="yGGG" />
+        <!-- Red for ramp, Green for highway (rGGG) when ramp is congested -->
+        <phase duration="30" state="rGGG" />
+    </tlLogic>
+</additional>
+

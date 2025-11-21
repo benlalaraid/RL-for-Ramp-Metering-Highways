@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<edges>
+    <!-- Main highway road -->
+    <edge id="highway" from="start_highway" to="merge_point" numLanes="3" speed="30" />
+    <edge id="highway_cont" from="merge_point" to="end_highway" numLanes="3" speed="30" />
+    
+    <!-- Ramp road -->
+    <edge id="ramp" from="ramp_entry" to="merge_point" numLanes="1" speed="20" />
+</edges>
+

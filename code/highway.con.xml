@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<connections>
+    <!-- Connection: Ramp to Highway -->
+    <connection from="ramp" to="highway" fromLane="0" toLane="0" />
+</connections>
+

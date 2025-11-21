@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes>
+    <!-- Vehicle type definition -->
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="30" />
+    <vType id="truck" accel="1.5" decel="2.5" sigma="0.5" length="10" maxSpeed="20" />
+
+    <!-- Explicit route definitions -->
+    <route id="main_highway_route" edges="highway highway_cont" />
+    <route id="ramp_merge_route" edges="ramp highway_cont" />
+
+    <!-- Vehicle flow for the main highway -->
+    <flow id="highway_flow" begin="0" end="300" vehsPerHour="600" route="main_highway_route" type="car" />
+    <!-- Vehicle flow targeting the third lane (index 2) of the highway -->
+    <flow id="highway_flow_lane_2" begin="0" end="300" vehsPerHour="200" route="main_highway_route" type="truck"  />
+
+    <!-- Vehicle flow for the ramp -->
+    <flow id="ramp_flow" begin="0" end="300" vehsPerHour="200" route="ramp_merge_route" type="car" />
+</routes>
+

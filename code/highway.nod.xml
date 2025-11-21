@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nodes>
+    <node id="start_highway" x="0" y="0" type="priority" />
+    <node id="end_highway" x="1000" y="0" type="priority" />
+    <node id="ramp_entry" x="500" y="-50" type="priority" />
+    <node id="merge_point" x="500" y="0" type="traffic_light" />
+</nodes>
+
